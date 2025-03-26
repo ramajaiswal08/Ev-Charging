@@ -1,7 +1,8 @@
 {
   "expo": {
     "name": "Evcharging",
-    "slug": "Evcharging",
+    "slug": "evcharging",
+    "scheme": "evcharging",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -19,10 +20,14 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.ramajaiswal.evcharging"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-font"
+    ]
   }
 }
