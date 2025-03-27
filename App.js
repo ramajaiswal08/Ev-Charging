@@ -5,6 +5,8 @@ import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 import LoginScreen from './App/Screen/LoginScreen/LoginScreen';
 import { SignedIn, SignedOut } from '@clerk/clerk-expo';
+import { NavigationContainer } from '@react-navigation/native';
+import TabNavigation from './App/Navigations/TabNavigation';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -29,7 +31,9 @@ export default function App() {
     <ClerkProvider publishableKey="pk_test_Y29vbC1idWxsZG9nLTIzLmNsZXJrLmFjY291bnRzLmRldiQ">
       <View style={styles.container}>
         <SignedIn>
-          <Text style={styles.welcomeText}>✅ You are Signed In!</Text>
+          <NavigationContainer>
+            <TabNavigation/>
+          </NavigationContainer>
         </SignedIn>
         <SignedOut>
           <LoginScreen />
@@ -43,7 +47,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    padding: 20,
+    padding: 40,
     justifyContent: 'center',
     alignItems: 'center',
   },
