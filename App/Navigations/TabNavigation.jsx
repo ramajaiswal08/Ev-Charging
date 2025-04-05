@@ -14,6 +14,7 @@ export default function TabNavigation() {
   return (
    <Tab.Navigator screenOptions={{
     headerShown:false,
+    tabBarStyle: { paddingBottom: 10, height: 60 },
    }}>
       <Tab.Screen name="home"
        component={HomeScreen}

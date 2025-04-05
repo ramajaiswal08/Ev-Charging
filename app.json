@@ -2,7 +2,7 @@
   "expo": {
     "name": "Evcharging",
     "slug": "evcharging",
-    "scheme": "evcharging",
+    "scheme": "evcharging", 
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,13 +21,23 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.ramajaiswal.evcharging"
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBZu1HqPy-uQliIUt7vXyIWCX2Vh7Bf7J8"
+        }
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": [
-      "expo-font"
-    ]
+    "plugins": ["expo-font",
+    [
+      "expo-location",
+      {
+
+        "locationAlwaysAndWhenInUsePermission":"Allow Ev Connect App to use your location."
+    }
+  ]
+]
   }
 }

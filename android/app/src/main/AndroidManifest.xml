@@ -3,6 +3,8 @@
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
   <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
   <uses-permission android:name="android.permission.VIBRATE"/>
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
   <queries>
     <intent>
@@ -28,5 +30,8 @@
         <data android:scheme="com.ramajaiswal.evcharging"/>
       </intent-filter>
     </activity>
+     <meta-data
+    android:name="com.google.android.geo.API_KEY"
+    android:value="AIzaSyBZu1HqPy-uQliIUt7vXyIWCX2Vh7Bf7J8"/>
   </application>
 </manifest>
